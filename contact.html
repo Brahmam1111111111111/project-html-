@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
+    
+    
+</head>
+<body>
+  <style>
+        .a{
+            height: 1px;
+            width: 1px;
+            color: red;
+        }
+        .b{
+            font-size: 40px;
+            padding: 10000px;
+        }
+        *{
+            font-family: 'quicksand', sans-serif;
+        }
+        body {
+            margin: 0px;
+            background-color: aliceblue;
+
+        }
+        .container {
+            width: 1000px;
+            height: auto;
+            margin: 10px auto;
+            background-color: white ;
+            border: 1px solid gainsboro;
+            box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+        }
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+        }
+        .search-holder form > input[type="search"] {
+            border: 1px solid gainsboro;
+            padding: 10px;
+
+        }
+        .search-holder form > button[type="submit"]{
+            background-color: black;
+            color: white;
+            padding: 11px;
+            border: 0px;
+            margin-left: -5px;
+        }
+        .main-menu {
+            background-color: black;
+            color: white;
+        }
+        .main-menu > ul {
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+        }
+        .main-menu > ul{
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+            display: flex;
+            justify-content: start;
+        }
+        .main-menu > ul > li > a{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            display: inline-block;
+        }
+        .main-menu > ul > li > a:hover {
+            background-color: orange;
+        }
+        .drop{
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+            position: absolute;
+            display: none;
+        }
+        .drop > li > a{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            background-color: teal;
+            display: inline-block;
+            width:100%;
+        }
+    
+        .drop > li > a:hover {
+            background-color: orange;
+        }
+        .main-menu > ul > li:hover.drop{
+            display: block;
+        }
+        Ispager {
+    margin-top: -25px !important;
+        }
+        .content-holder{
+            display: flex ;
+            justify-content: space-between;
+            background-color:s ;
+            border-bottom:1px solid gainsboro ;
+        }
+        .content-holder.content  {
+            padding: 25px;
+             background-color: white;
+            width: 80%;
+        }
+         .content h1 h2 {
+            font-size: 1em;
+            color: darkgray;
+        }
+         .sidebar {
+            padding: 25px;
+            width: 20%;
+        }
+        .sidebar .widget h3{
+            background-color: white;
+
+
+        }
+       .sidebar.widget ul, 
+       .footer-widget ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+       }
+       .sidebar.widget ul > li > a,
+       .footer-widget ul > li > a{
+        color: white;
+        text-decoration: none;
+       }
+       .sidebar.widget ul > li > a:hover {
+        color: black;
+       }
+       .footer-widget-holder {
+        display: flex;
+        background-color: black;
+        color: white;
+        justify-content: space-around;
+    
+       }
+       .footer-widget-holder{
+        display: flex;
+        background-color: rgb;
+        color: white;
+        justify-content: space-around;
+       }
+       .footer-widget-holder {
+        display: flex;
+       }
+       .site-footer {
+        background-color: black;
+        color: white;
+        padding: 25px;
+        text-align: center;
+       }
+       .site-footer p {
+        margin: 0px;
+       }
+       /*services and products */
+       .services-holder {
+        display: grid;
+        grid-template-columns: auto auto auto;
+       }
+       /* Services and products */
+       .service {
+        padding: 20px;
+        border: 1px solid gainsboro;
+       }
+       .service a{
+        text-decoration: none;
+        color: red
+       }
+       .about-holder{
+        padding: 25px;
+       }
+       /*about Holder */
+    /*contact page */
+    .gmap{
+        width: 100%;
+        height: 400px;
+        border-bottom: 1px solid gainsboro;
+    }
+    .gmap iframe {
+        width: 100%;
+        height: 400px;
+    }
+    .contact-details {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-form,
+    .time-contact {
+        padding: 25px;
+        width:50%;
+    }
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form form button {
+        display: inline-block;
+        width: 105%;
+        padding: 10px;
+    }
+    
+  </style>  
+        
+
+    
+<div class="container">
+    <!--main Header -->
+    <header class="main-header">
+    <!-- logo Holder -->
+    <div class="logo-holder">
+        <a href="#">
+    
+    <img src="C:\Users\K.Brahmam\Downloads\image.jpg.jpg" style="height: 35px;" width="35px;" >
+                
+            </a>
+        </div>
+        <!--Logo Holder-->
+        <!--Search Holder-->
+        <div class="search-holder">
+            <form action="" method="get">
+             <input type="search" name="s" placeholder="Search for..">
+             <button type="submit">search</button>
+            </form>
+         </div>
+         <!--Search header-->
+         </header>
+         <!--main header-->
+         <!--Main menu-->
+         <nav class="main-menu">
+            <ul type="">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">services</a>
+                <ul class="drop">
+                <li><a href="#">Service One</a></li>
+                <li><a href="#">Service Two</a></li>
+                <li><a href="#">Service Three</a></li>
+                </ul>
+                <li><a href="#">Products </a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul >
+         </nav>
+         <!--main Menu-->
+         
+         <!--map -->
+
+        
+         </section>
+         <!--Contact Details-->
+
+         <section class="gmap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122410.09437229643!2d80.64488429999999!3d16.5101648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35eff9482d944b%3A0x939b7e84ab4a0265!2sVijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1716619392393!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <!-- Map-->
+          <!--Contact Details-->
+          <section class="contact-details">
+            <div class="contact-form">
+                <form action="" method="post">
+                    <label for="c_name">
+                        Name:
+                <input type="text" name="c_name" id="c_name" placeholder="Name">
+                    </label>
+                    
+                    <label for="c_email">
+                    Email:
+                    <input type="text" name="c_email" id="c_email" placeholder="Email">
+                    </label>
+                     <label for="c_Phone">
+                     Phone:
+                     <input type="text" name="c_phone" id="c_phone" placeholder="Phone">
+                    </label>
+                    <label for="c_message">
+                        Message:
+                       <textarea name="c_message" id="c_message" cols="30" rows="10"></textarea>
+                    </label>
+                    <button type="submit">Send Message</button>
+                
+                </form>
+
+            </div>
+            <div class="time-contact">
+                <h3>Timings</h3>
+                <p><strong>mon-sat</strong> <time datetime="09:00">09:00Am</time> - <time datetime="17:00">05:00pm</time></p>
+<hr>
+<h3>Contact</h3>
+<p><a href="mailto:99220041227@klu.ac.in"></a>99220041227@klu.ac.in</p>
+            </div>
+         
+          </section>
+          <!--About Holder-->
+
+         
+         <!--Footer widgets-->
+<section class="footer-widget-holder">
+    <div class="footer-widget">
+        <a href="#">
+            <img src="C:\Users\K.Brahmam\Downloads\image.jpg.jpg" style="height: 35px;" width="35px;" alt="footer-widget" >
+                
+        </a>
+        <h3>Address</h3>
+            <address>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </address>
+     </div>
+    <div class="footer-widget">
+        <h4>Sitemap</h4>
+    
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            
+        </div>
+        
+        <div class="footer-widget">
+            <h4>Sitemap</h4>
+        
+            <ul>
+                <li><a href="#">Home</a></li>
+                 <li><a href="#">services</a></li>
+                <li><a href="#">products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+        
+            <div class="footer-widget">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                
+    
+        </ul>
+</section>
+<!--Footer widgets-->
+<!--Site Footer-->
+<footer class="site-footer">
+    
+    <p><small style="color: red;"> Copyright &copy; 2025 </small></p>
+</footer>
+
+    </div>
+    <style>
+        
+    </style>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    });
+});
+</script>
+
+
+</body>
+</html>
+    
